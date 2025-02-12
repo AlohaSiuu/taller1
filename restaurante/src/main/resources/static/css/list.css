@@ -1,0 +1,102 @@
+/* Css de la lista */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+	padding-bottom: 60px;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0; 
+}
+
+main {
+    flex: 1; 
+}
+
+/* Animación slideIn */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título principal*/
+.title-h2 {
+    font-family: 'Playfair Display', serif; 
+    color: #333; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem; 
+    letter-spacing: 0.5px; 
+    text-transform: capitalize;
+    animation: slideIn 1s ease-out; 
+}
+
+/* Estilo de la tabla */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Filas de la tabla con efecto alternado */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border: none;
+}
+
+.table th {
+    background-color: #d8cbb8;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efecto hover para las filas de la tabla */
+.table tr:hover {
+    background-color: #d8cbb8;
+    color: #333; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Filas de la tabla con animación */
+.table tbody tr {
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.2s; 
+}
+
+/* Footer */
+footer {
+    position: sticky;
+    bottom: 0;
+    background-color: #bcaf9c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+

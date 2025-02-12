@@ -1,0 +1,26 @@
+/*Css de los iconos*/
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+
+.social-icons a {
+    margin-right: 10px;
+    padding: 0;
+    border: none; 
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+.social-icons i {
+    font-size: 1.5rem; 
+    background: none;
+    box-shadow: none; 
+	color: black;
+}

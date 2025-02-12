@@ -1,0 +1,150 @@
+/* Css del index */
+
+/* Estilo del encabezado */
+header {
+    background-image: url('../img/cabecera.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px; 
+    display: flex;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* Configuración básica*/
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+/* Configuración del cuerpo*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+}
+
+/* Contenedor principal*/
+main {
+    flex: 1; 
+}
+
+/* Contenedor para la sección de registro */
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; 
+    background-color: #f8f9fa;
+}
+
+/* Botón personalizado */
+.custom-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+	background-color: #d8cbb8;
+	color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.custom-btn:hover {
+    background-color: #bcaf9c; 
+    transform: scale(1.1); 
+}
+
+
+/* Sección con padding vertical */
+section.py-5 {
+    background-color: white; 
+}
+
+/* Estilo para las tarjetas */
+.card {
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Imagen de fondo de las tarjetas */
+.card-image {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Fondo para cada tarjeta */
+#terraza {
+    background-image: url('../img/terraza.jpg');
+    height: 200px; 
+}
+
+#patio {
+    background-image: url('../img/patio.jpeg');
+    height: 200px;
+}
+
+#salon {
+    background-image: url('../img/salon.jpg');
+    height: 200px; 
+}
+
+/* Contenido del cuerpo de las tarjetas */
+.card-body {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px; 
+}
+
+/* Título dentro de las tarjetas */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Texto descriptivo en las tarjetas */
+.card-text {
+    font-size: 0.9rem;
+}
+
+/* Estilo para filas de diseño flexible */
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilo del footer*/
+footer {
+    background-color: #bcaf9c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+
+/* Estilo responsivo para dispositivos pequeños */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 100%; 
+        margin-bottom: 20px;
+    }
+}
+
+
+
